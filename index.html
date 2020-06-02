@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <?php $username = 'Harun' ?>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TešanjConnected</title>
+    <meta name="google" content="translate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/acce701ae4.js"
+      ,
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/javascripts/showElement.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top box-shadow"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="logo.png" width="80" height="80"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#o-nama">O nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#usluge">Naše usluge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prava-koristenja">Prava korištenja</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12 text-dark box-shadow">
+          <!-- Container for the image gallery -->
+          <div class="container">
+            <!-- Full-width images with number text -->
+            <div class="mySlides center">
+              <div class="numbertext">1 / 6</div>
+              <img src="1.jpg" class="center" width="160" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="2.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="3.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="4.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="5.jpg" style="width: 100%;" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="1.jpg"
+                  style="width: 100%;"
+                  onclick="currentSlide(1)"
+                  alt="Logo"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="2.jpg"
+                  style="width: 100%;"
+                  onclick="currentSlide(2)"
+                  alt="Prikaz registracijske forme"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="3.jpg"
+                  style="width: 100%;"
+                  onclick="currentSlide(3)"
+                  alt="Prikaz vremenske crte"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="4.jpg"
+                  style="width: 100%;"
+                  onclick="currentSlide(4)"
+                  alt="Prikaz jedne objave"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="5.jpg"
+                  style="width: 100%;"
+                  onclick="currentSlide(5)"
+                  alt="Prikaz profila"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-xl-12 col-md-12 col-sm-12 bg-dark text-light center box-shadow"
+          id="o-nama"
+        >
+          <h1>O nama</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xl-12 col-md-12 col-sm-12 bg-dark text-light center box-shadow"
+          id="usluge"
+        >
+          <h1>Naše usluge</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xl-12 col-md-12 col-sm-12 bg-dark text-light center box-shadow"
+          id="prava-koristenja"
+        >
+          <h1>Prava korištenja</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+</script>
